@@ -41,8 +41,7 @@ exports['constuct'] = {
          'json'   : {'my':'body'},
          'headers': [
             {'x-forwarded-for': '127.0.0.1'},
-            {'accept-encoding': 'gzip,deflate,sdch'},
-            {null: 'null'}
+            {'accept-encoding': 'gzip,deflate,sdch'}
          ]
       }
 

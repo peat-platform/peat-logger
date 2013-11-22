@@ -3,15 +3,40 @@
 Logger for the OPENi Cloudlet Platform
 
 ## Getting Started
-Install the module with: `npm install openi-logger`
+Install the module with: `npm install git+ssh://git@gitlab.openi-ict.eu:openi-logger.git`
 
-```javascript
-var openi_logger = require('openi-logger');
-openi_logger.awesome(); // "awesome"
+To build the project enter the following commands. Note: npm is only required the first time the module is built or if a new dependency is added. There are a number of grunt tasks that can be executed including: test, cover, default and jenkins. The jenkins task is executed on the build server, if it doesn't pass then the build will fail.
+
+```bash
+git clone git@gitlab.openi-ict.eu:openi-logger.git
+cd openi-logger
+npm install
+grunt jenkins
 ```
 
 ## Documentation
-_(Coming soon)_
+
+### Logging Levels
+
+Below is a list of common logging levels and a general outline of how they should be used.
+
+*  _fatal__
+   Runtime errors that cause the program to terminate prematurely.
+
+*  _error_
+   Other problems/errors encountered at runtime, which do not necessarily cause premature termination.
+
+*  _warn_
+   Runtime issues that are undesired, however do not generate errors.
+
+*  _info_
+   Runtime events that may be interesting, such as startup and shutdown.
+
+*  _debug_
+   Detailed information about system state and the flow of the system.
+
+*  _trace_
+   Highly detailed information.
 
 ## Examples
 _(Coming soon)_
@@ -23,5 +48,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2013 dmccarthy  
+Copyright (c) 2013 dmccarthy dbenson
 Licensed under the MIT license.

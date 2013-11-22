@@ -20,22 +20,22 @@ grunt jenkins
 
 Below is a list of common logging levels and a general outline of how they should be used.
 
-*  _fatal__
+*  __fatal__
    Runtime errors that cause the program to terminate prematurely.
 
-*  _error_
+*  __error__
    Other problems/errors encountered at runtime, which do not necessarily cause premature termination.
 
-*  _warn_
+*  __warn__
    Runtime issues that are undesired, however do not generate errors.
 
-*  _info_
+*  __info__
    Runtime events that may be interesting, such as startup and shutdown.
 
-*  _debug_
+*  __debug__
    Detailed information about system state and the flow of the system.
 
-*  _trace_
+*  __trace__
    Highly detailed information.
 
 ## Examples

@@ -18,7 +18,8 @@ grunt jenkins
 
 ### Logging Levels
 
-Below is a list of common logging levels and a general outline of how they should be used.
+Below is a list of common logging levels and a general outline of how they should be used. 
+The levels below are ordered in their correct hierarchial positions.
 
 *  __fatal__
    Runtime errors that cause the program to terminate prematurely.
@@ -39,13 +40,40 @@ Below is a list of common logging levels and a general outline of how they shoul
    Highly detailed information.
 
 ## Examples
-_(Coming soon)_
+
+```javascript
+// Initialise the logger.
+var openiLogger = require('openi-logger')
+
+// Define these wherever you feel most appropriate.
+// path:       The output log file path.
+// log_level:  Defines the level of logging desired e.g. setting debug will not record trace messages but will record debug and everything higher(see above).
+// as_json:    Do you want the logs to be JSON format?
+logger_params = {
+      'path'     : '/opt/openi/cloudlet_platform/logs/data_api',
+      'log_level': 'debug',
+      'as_json'  : false
+}
+
+// You can configure the logger by passing parameters to it.
+var init = function(logger_params){
+   this.logger = openiLogger(logger_params)
+}
+
+// Below shows how to use the logger.
+this.logger.log('trace', 'this is a trace log message')
+this.logger.log('debug', 'this is a debug log message')
+this.logger.log('info',  'this is an info log message')
+this.logger.log('warn',  'this is an warn log message')
+this.logger.log('error', 'this is an error log message')
+this.logger.log('fatal', 'this is a fatal log message')
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+**0.1.0** *(23/10/14 dmccarthy@tssg.org, dbenson@tssg.org, dconway@tssg.org)* Includes the basic logger functionality.
 
 ## License
 Copyright (c) 2013 dmccarthy dbenson

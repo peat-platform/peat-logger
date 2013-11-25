@@ -76,5 +76,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 **0.1.0** *(23/10/14 dmccarthy@tssg.org, dbenson@tssg.org, dconway@tssg.org)* Includes the basic logger functionality.
 
 ## License
-Copyright (c) 2013 dmccarthy dbenson
+Copyright (c) 2013 dmccarthy dbenson dconway
 Licensed under the MIT license.

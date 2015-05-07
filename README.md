@@ -1,6 +1,6 @@
 # openi-logger
 
-Logger for the OPENi Cloudlet Platform
+Logger for the PEAT Cloudlet Platform
 
 ## Getting Started
 Install the module with: `npm install git+ssh://git@gitlab.openi-ict.eu:openi-logger.git`

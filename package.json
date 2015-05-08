@@ -1,5 +1,5 @@
 {
-  "name": "openi-logger",
+  "name": "peat-logger",
   "description": "Logger for the PEAT Cloudlet Platform",
   "version": "0.1.0",
   "homepage": "http://openi-ict.eu",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:peat-platform/openi-logger.git"
+    "url": "git@github.com:peat-platform/peat-logger.git"
   },
   "licenses": [
     {

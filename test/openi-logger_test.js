@@ -1,7 +1,7 @@
 'use strict';
 var fs           = require('fs');
 var base_path    = require('./basePath.js');
-var openi_logger = require(base_path + '../lib/main.js');
+var peat_logger = require(base_path + '../lib/main.js');
 
 
 exports['constuct'] = {
@@ -15,7 +15,7 @@ exports['constuct'] = {
          'as_json'  : false
       }
 
-      var logger = openi_logger(logger_params)
+      var logger = peat_logger(logger_params)
 
       logger.log('info', 'test message')
 
@@ -31,7 +31,7 @@ exports['constuct'] = {
          'as_json'  : false
       }
 
-      var logger = openi_logger(logger_params)
+      var logger = peat_logger(logger_params)
 
       var mockMongrelMessage = {
          'uuid'   : 'QWEQWEQWE',

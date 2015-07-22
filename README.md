@@ -1,15 +1,15 @@
-# openi-logger
+# peat-logger
 
 Logger for the PEAT Cloudlet Platform
 
 ## Getting Started
-Install the module with: `npm install git+ssh://git@gitlab.openi-ict.eu:openi-logger.git`
+Install the module with: `npm install git+ssh://git@gitlab.peat-platform.eu:peat-logger.git`
 
 To build the project enter the following commands. Note: npm is only required the first time the module is built or if a new dependency is added. There are a number of grunt tasks that can be executed including: test, cover, default and jenkins. The jenkins task is executed on the build server, if it doesn't pass then the build will fail.
 
 ```bash
-git clone git@gitlab.openi-ict.eu:openi-logger.git
-cd openi-logger
+git clone git@gitlab.peat-platform.eu:peat-logger.git
+cd peat-logger
 npm install
 grunt jenkins
 ```
@@ -43,21 +43,21 @@ The levels below are ordered in their correct hierarchial positions.
 
 ```javascript
 // Initialise the logger.
-var openiLogger = require('openi-logger')
+var peatLogger = require('peat-logger')
 
 // Define these wherever you feel most appropriate.
 // path:       The output log file path.
 // log_level:  Defines the level of logging desired e.g. setting debug will not record trace messages but will record debug and everything higher(see above).
 // as_json:    Do you want the logs to be JSON format?
 logger_params = {
-      'path'     : '/opt/openi/cloudlet_platform/logs/data_api',
+      'path'     : '/opt/peat/cloudlet_platform/logs/data_api',
       'log_level': 'debug',
       'as_json'  : false
 }
 
 // You can configure the logger by passing parameters to it.
 var init = function(logger_params){
-   this.logger = openiLogger(logger_params)
+   this.logger = peatLogger(logger_params)
 }
 
 // Below shows how to use the logger.

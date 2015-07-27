@@ -3,12 +3,12 @@
 Logger for the PEAT Cloudlet Platform
 
 ## Getting Started
-Install the module with: `npm install git+ssh://git@gitlab.peat-platform.eu:peat-logger.git`
+Install the module with: `npm install git+ssh://git@gitlab.peat-platform.org:peat-logger.git`
 
 To build the project enter the following commands. Note: npm is only required the first time the module is built or if a new dependency is added. There are a number of grunt tasks that can be executed including: test, cover, default and jenkins. The jenkins task is executed on the build server, if it doesn't pass then the build will fail.
 
 ```bash
-git clone git@gitlab.peat-platform.eu:peat-logger.git
+git clone git@gitlab.peat-platform.org:peat-logger.git
 cd peat-logger
 npm install
 grunt jenkins

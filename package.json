@@ -3,6 +3,7 @@
   "description": "Logger for the PEAT Cloudlet Platform",
   "version": "0.1.0",
   "homepage": "http://peat-platform.org",
+  "homepage": "",
   "author": {
     "name": "dmccarthy",
     "email": "dmccarthy@tssg.org"
@@ -10,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:peat-platform/peat-logger.git"
+  },
+  "bugs": {
+    "url": ""
   },
   "licenses": [
     {
@@ -26,7 +30,20 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-config": ""
+    "grunt-config": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-istanbul": "",
+    "grunt-istanbul-coverage": "",
+    "grunt-node-tap": "",
+    "grunt-plato": "",
+    "grunt-qunit-cov": "",
+    "sinon": "",
+    "tap": ""
   },
   "dependencies": {
     "winston": ""

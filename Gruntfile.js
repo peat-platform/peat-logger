@@ -20,7 +20,7 @@ module.exports = function (grunt) {
       },
       plato: {
          options: {
-            title: 'OPENi Logger',
+            title: 'PEAT Logger',
             jshint: grunt.file.readJSON('.jshintrc')
          },
          metrics: {
